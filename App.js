@@ -1,20 +1,27 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import { Dimensions, StyleSheet, Text, View,Button } from "react-native";
+import { BarCodeScanner } from "expo-barcode-scanner";
+import { useEffect, useState } from "react";
+
+//navigator
+import AppNav from "./navigator/AppNav";
+
+
+
 
 export default function App() {
+console.disableYellowBox = true;
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <AppNav/>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
   },
 });

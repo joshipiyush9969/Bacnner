@@ -4,11 +4,11 @@
     "slug": "Bacnner",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/iconB.png",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#282c2c"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -17,13 +17,16 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "buildNumber": "1.0.0",
+      "bundleIdentifier": "com.piyush9969.Bacnner"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      }
+        "backgroundColor": "#282c2c"
+      },
+      "package": "com.piyush9969.Bacnner",
+      "versionCode": 1
     },
     "web": {
       "favicon": "./assets/favicon.png"
